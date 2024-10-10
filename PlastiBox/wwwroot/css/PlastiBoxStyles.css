@@ -1,8 +1,14 @@
-﻿/* Reset básico */ 
+﻿/*Estilo pagina Index (Layout)*/
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.centrartitulo {
+    display: block;
+    text-align: center;
 }
 
 html, body {
@@ -11,29 +17,116 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* Estilos para el header */ 
+/* Estilos para el header */
 .navbar-custom {
-    background-color: #3f2689; /* Fondo morado */
+    background-color: #2f1893; /* Fondo morado */
     color: white; /* Color base */
     padding: 20px 0;
 }
 
-.navbar-custom .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: white !important; /* Forzar color blanco */ 
-    margin-left: 20px;
-}
+    .navbar-custom .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: white !important; /* Forzar color blanco */
+        margin-left: 20px;
+    }
 
-.navbar-custom .navbar-nav .nav-link {
-    color: white !important; /* Forzar color blanco */
-    font-size: 16px;
-    padding: 10px 15px;
-    text-decoration: none;
+    .navbar-custom .navbar-nav .nav-link {
+        color: white !important; /* Forzar color blanco */
+        font-size: 16px;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+
+.nav-link:hover {
+    border-radius: 30px;
+    background-color: #28dcc4;
 }
 
 .navbar-icons a {
     color: white !important; /* Forzar color blanco */
     margin-left: 10px;
     font-size: 20px;
+}
+
+.boton-inicio-sesion {
+    display: inline-block;
+    color: white !important; /* Forzar color blanco */
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #e93a7d;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    transition-delay: 0.08s;
+}
+
+.boton-inicio-sesion:hover {
+    background-color: #28dcc4;
+}
+
+/*Esitlo página registrar usuario(create)*/
+
+.estilo-titulo {
+    font-size: 48px;
+    color: #2C1A70;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.formulario-contenedor {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario-grupo {
+    margin-bottom: 20px;
+}
+
+.formulario-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-input, .formulario-textarea, .formulario-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Estilos del botón de envío */
+.formulario-boton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .formulario-boton:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilo para mejorar la apariencia de los mensajes de error */
+.formulario-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
